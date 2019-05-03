@@ -15,6 +15,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindSrollViewTap: function(){
+    wx.navigateTo({
+        url:'../sroll-view/sroll-view'
+      })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

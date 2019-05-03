@@ -10,4 +10,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <view>
+    <button type='default' bindtap='bindSrollViewTap' >滑动视图</button>
+  </view>
 </view>
