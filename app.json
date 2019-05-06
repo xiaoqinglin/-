@@ -2,13 +2,44 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/sroll-view/sroll-view"
+    "pages/components/sroll-view/sroll-view",
+    "pages/components/components",
+    "pages/components/username-edit/username-edit",
+    "pages/components/tel-bind/tel-bind"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#11cd6e",
+    "navigationBarTitleText": "福州印象",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/components/components",
+        "iconPath": "pages/image/ciwei.png",
+        "selectedIconPath": "pages/image/ciwei_hl.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/yuedu.png",
+        "selectedIconPath": "pages/image/yuedu_hl.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxab7becbdca54763b"
+  ],
   "sitemapLocation": "sitemap.json"
 }

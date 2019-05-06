@@ -1,16 +1,39 @@
 <!--index.wxml-->
+<view class="usermotto">
+  <text class="user-motto" wx:if="{{!hasUserInfo && canIUse}}">{{motto}}</text>
+  <text class="user-motto" wx:else>{{userInfo.nickName}},{{motto}}</text>
+</view>
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view wx:if="{{!hasUserInfo && canIUse}}">
+      <image class="userinfo-avatar" src="{{list[0].info}}"></image>
+    </view>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class='list'>
+    <navigator class='list-nav' catchtap='navigateTo'>
+      <view class="list-text">{{list[0].text}}</view>
+      <view class="list-info avatar" wx:if="{{list[0].img}}">
+        <image src="{{list[0].info}}"></image>
+      </view>
+      <view class="arrow-wrap"></view>
+    </navigator>
+    <navigator class='list-nav' data-url='{{list[1].url}}' catchtap='navigateTo'>
+      <view class="list-text">{{list[1].text}}</view>
+      <view class="list-info">{{list[1].info}}</view>
+      <view class="arrow-wrap"></view>
+    </navigator>
+    <navigator class='list-nav' data-url='{{list[2].url}}' catchtap='navigateTo'>
+      <view class="list-text">{{list[2].text}}</view>
+      <view class="list-info">{{list[2].info}}</view>
+      <view class="arrow-wrap"></view>
+    </navigator>
   </view>
-  <view>
-    <button type='default' bindtap='bindSrollViewTap' >滑动视图</button>
-  </view>
+
 </view>

@@ -1,0 +1,39 @@
+<!--pages/components/components.wxml-->
+<view class='page__bd'>
+  <view class="section__nav">
+    <view class="left border__right" bindtap="btnSrollView">
+      <!--bindtap 点击事件 -->
+      滑动视图
+    </view>
+    <view class="right">
+      <view class="item border__right border__bottom" bindtap="btn2">导航栏</view>
+      <view class="item border__bottom" bindtap="btn3">各种各样</view>
+      <view class="item border__right">特价酒店</view>
+      <view class="item">名宿-客栈</view>
+    </view>
+  </view>
+  <view class="section__nav2">
+    <view class="left border__right" bindtap="btnSrollView">
+      <!--bindtap 点击事件 -->
+      滑动视图
+    </view>
+    <view class="right">
+      <view class="item border__right border__bottom" bindtap="btn2">导航栏</view>
+      <view class="item border__bottom" bindtap="btn3">各种各样</view>
+      <view class="item border__right">特价酒店</view>
+      <view class="item">名宿-客栈</view>
+    </view>
+  </view>
+  <view class="section__nav3">
+    <view class="left border__right" bindtap="btnSrollView">
+      <!--bindtap 点击事件 -->
+      滑动视图
+    </view>
+    <view class="right">
+      <view class="item border__right border__bottom" bindtap="btn2">导航栏</view>
+      <view class="item border__bottom" bindtap="btn3">各种各样</view>
+      <view class="item border__right">特价酒店</view>
+      <view class="item">名宿-客栈</view>
+    </view>
+  </view>
+</view>

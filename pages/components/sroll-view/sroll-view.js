@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['../image/timg.jpg', 
-              '../image/timg1.jpg', 
-              '../image/timg2.jpg'
+    imgUrls: ['../../image/timg.jpg', 
+              '../../image/timg1.jpg', 
+              '../../image/timg2.jpg'
     ],
     indicatorDots: false,
     autoplay: false,
